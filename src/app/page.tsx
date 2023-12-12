@@ -40,17 +40,17 @@ export default function Home() {
       {/* hero content */}
       <div className="flex flex-col items-center lg:mt-24 text-center">
 
-      <h1 className=" text-3xl lg:text-7xl my-2">Get started</h1>
+      <h1 className=" text-3xl lg:text-7xl my-2">Explore  MetaPlanet </h1>
         <GoArrowDown size={50} className="text-center border rounded-full p-2 animate-bounce" />
       </div>
         
-      <div className=" w-full flex mb-36   flex-col md:flex-row gap-4 md:gap-8 mt-12 lg:gap-16 md:items-center ">
+      <div className=" w-full flex mb-36    flex-col md:flex-row gap-4 md:gap-8 mt-12 lg:gap-16 md:items-center ">
         <Image
           alt="sdf"
           src={bg1}
           width={1000}
           height={800}
-          className="w-[700px] h-[400px] object-cover rounded-xl"
+          className="w-[700px] h-[400px] object-cover rounded-xl "
         />
         {/* hero content text info */}
         <div className="text-center md:text-start">
