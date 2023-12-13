@@ -4,7 +4,7 @@ import Link from "next/link";
 import bg from "../../public/cover.png";
 import bg1 from "../../public/planet-08.png";
 import bg2 from "../../public/planet-02.png";
-import { GoArrowRight } from "react-icons/go";
+import { GoArrowRight, GoArrowUp } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
 import { BsHeadsetVr } from "react-icons/bs";
 
@@ -107,7 +107,12 @@ export default function Home() {
         </div>
       </div>
       {/* end */}
-      <div className=" "></div>
+      <Link href={'/'}>
+
+        <GoArrowUp color="black"  className="bg-slate-200 block   w-12 h-12 p-2 ml-auto my-2 animate-bounce text-slate-800 rounded-full"/>
+      </Link>
+      <div className=" ">
+      </div>
     </div>
   );
 }

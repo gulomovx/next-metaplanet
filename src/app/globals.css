@@ -16,9 +16,6 @@
 .active{
  color: orangered;
  /* border: 1px solid #720c1a; */
- border-radius: 60px; 
- padding: 2px 20px;
- transition: all ease .2s;
- background: #2342;
+ 
  
 }
