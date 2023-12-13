@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import bg from "../../public/cover.png";
 import bg1 from "../../public/planet-08.png";
+import bg2 from "../../public/planet-02.png";
 import { GoArrowRight } from "react-icons/go";
 import { GoArrowDown } from "react-icons/go";
+import { BsHeadsetVr } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -31,19 +33,24 @@ export default function Home() {
             className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-xl"
           />
           <div className="absolute flex items-center gap-8 animate-pulse h-24  text-white  top-[100px] md:top-[200px] lg:top-[300px] left-12">
-            <h1 className="text-6xl backdrop-blur-sm">Meta</h1>
-            <GoArrowRight size={80} className="border rounded-full p-2 animate"/>
+            <h1 className=" text-6xl lg:text-8xl backdrop-blur-sm">Meta</h1>
+            <GoArrowRight
+              size={80}
+              className="border animate animate-infinite animate-fade-right delay-200 animate-duration-1000 rounded-full p-2 animate"
+            />
           </div>
         </div>
         {/*  */}
       </div>
       {/* hero content */}
       <div className="flex flex-col items-center lg:mt-24 text-center">
-
-      <h1 className=" text-3xl lg:text-7xl my-2">Explore  MetaPlanet </h1>
-        <GoArrowDown size={50} className="text-center border rounded-full p-2 animate-bounce" />
+        <h1 className=" text-3xl lg:text-7xl my-2">Explore MetaPlanet </h1>
+        <GoArrowDown
+          size={50}
+          className="text-center border rounded-full p-2 animate-bounce"
+        />
       </div>
-        
+
       <div className=" w-full flex mb-36    flex-col md:flex-row gap-4 md:gap-8 mt-12 lg:gap-16 md:items-center ">
         <Image
           alt="sdf"
@@ -75,12 +82,32 @@ export default function Home() {
         </div>
       </div>
       {/* home content */}
-      <div
-        className=" "
-        
+      {/* another content */}
+      <h1 className=" text-3xl lg:text-5xl text-center">Metaverse arts</h1>
+      <div className="text-center mx-auto my-2 border-2 border-slate-700 w-[150px]"></div>
+      <div className=" my-8  text-white flex flex-col lg:flex-row justify-between items-center   h-full w-full bg-[#052465] rounded-md 
+"
       >
+        <div className=" w-full lg:w-[50%] p-8">
+          
+          <h1 className=" text-3xl lg:text-5xl">Pick your best one</h1>
+          <p className="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam consequuntur obcaecati aut quam nemo illum consequatur aspernatur atque error distinctio.</p>
+          <button className="bg-white flex group items-center gap-2 my-8 text-slate-700 py-2 px-12">
+            Send
+            <GoArrowRight className="group-hover:translate-x-1 duration-300" size={20}/>
+          </button>
+        </div>
         
+        <div className="p-2 lg:p-8">
+          <Image
+            className=" w-full lg:w-[500px] h-[300px] rounded-2xl object-cover"
+            src={bg2}
+            alt="sdf"
+          />
+        </div>
       </div>
+      {/* end */}
+      <div className=" "></div>
     </div>
   );
 }
