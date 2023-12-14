@@ -16,7 +16,7 @@ const HeaderMain = () => {
         </div>
         {/*  */}
         <div className=" sm:w-[400px] md:w-[60%] relative bg-orange-30    p-1 text-slate-700">
-          <ul className="flex justify-around  md:mx-16 mx-2 ">
+          <ul className="flex justify-around gap-2  md:mx-16 mx-2 ">
             <Link className={`${path==`/`? `active`:` `}`} href="/">Home</Link>
             <Link className={`${path==`/About`? `active`:` `}`} href="/About">About</Link>
             <Link className={`${path==`/Gallery`? `active`:` `}`} href="/Gallery">Gallery</Link>
