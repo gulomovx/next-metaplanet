@@ -26,7 +26,9 @@ const config: Config = {
   },
   plugins: [
     require("daisyui"),
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('flowbite/plugin')
+
 
   ],
 }

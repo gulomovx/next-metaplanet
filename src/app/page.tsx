@@ -11,7 +11,7 @@ import { BsHeadsetVr } from "react-icons/bs";
 export default function Home() {
   return (
     <div
-      className="max-w-7xl mx-auto"
+      className="max-w-7xl mx-auto "
       style={{
         backgroundImage: `url(${bg1})`,
         backgroundRepeat: "no-repeat",
@@ -57,7 +57,7 @@ export default function Home() {
           src={bg1}
           width={1000}
           height={800}
-          className="w-[700px] h-[400px] object-cover rounded-xl "
+          className=" w-full md:w-[500px] lg:w-[700px] h-[400px] object-cover rounded-xl "
         />
         {/* hero content text info */}
         <div className="text-center md:text-start">
@@ -83,7 +83,7 @@ export default function Home() {
       </div>
       {/* home content */}
       {/* another content */}
-      <h1 className=" text-3xl lg:text-5xl text-center">Metaverse arts</h1>
+      <h1 className=" text-3xl lg:text-7xl text-center">Metaverse arts</h1>
       <div className="text-center mx-auto my-2 border-2 border-slate-700 w-[150px]"></div>
       <div className=" my-8  text-white flex flex-col lg:flex-row justify-between items-center   h-full w-full bg-[#052465] rounded-md 
 "
@@ -92,10 +92,10 @@ export default function Home() {
           
           <h1 className=" text-3xl lg:text-5xl">Pick your best one</h1>
           <p className="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam consequuntur obcaecati aut quam nemo illum consequatur aspernatur atque error distinctio.</p>
-          <button className="bg-white flex group items-center gap-2 my-8 text-slate-700 py-2 px-12">
+          <Link href={'/Gallery'} className="bg-white w-[180px] flex group items-center gap-2 my-8 text-slate-700 py-2 px-12">
             Send
-            <GoArrowRight className="group-hover:translate-x-1 duration-300" size={20}/>
-          </button>
+            <GoArrowRight className="group-hover:translate-x-1 duration-300" size={30}/>
+          </Link>
         </div>
         
         <div className="p-2 lg:p-8">
