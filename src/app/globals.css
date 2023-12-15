@@ -14,8 +14,8 @@
   }
 }
 .active {
-  color: orangered;
-  border-bottom: 2px solid orangered;
+  color: rgb(199, 11, 26);
+  border-bottom: 2px solid rgb(205, 45, 58);
   margin-bottom: 2px;
 
   /* border: 1px solid #720c1a; */

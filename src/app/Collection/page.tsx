@@ -7,8 +7,8 @@ const Collection = () => {
   const [selectedId, setSelectedId] = useState(null);
 
   return (
-    <div className="max-w-7xl h-screen mx-auto h rounded-lg mb-8   ">
-      <div className="flex flex-col items-center lg:mt-8 text-center">
+    <div className=" h-screen mx-auto  bg-gradie0  ">
+      <div className="flex flex-col items-center  text-center    ">
         <h1 className=" text-3xl lg:text-7xl my-2 text-title">Collection </h1>
         <GoArrowDown
           size={50}

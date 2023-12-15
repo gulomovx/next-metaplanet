@@ -4,6 +4,7 @@ import { Unbounded } from "next/font/google";
 import HeaderMain from "../components/HeaderMain";
 import HeaderTop from "../components/HeaderTop";
 import "./globals.css";
+import { Providers } from "./Providers/page";
 
 const inter = Unbounded({ subsets: ["latin"], weight: "400" });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <HeaderTop /> */}
         <HeaderMain />
-        {children}
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>
