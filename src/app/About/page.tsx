@@ -20,8 +20,8 @@ const About = () => {
            p-2 animate-bounce"
         />
         {/* content */}
-        <div className=" lg:w-[1400px] w-full mb-96 lg:p-16 p-8  bg-slate-100 border-slate-800 my-2  rounded-lg   ">
-          <div className="">
+        <div className=" lg:w-[1400px] w-full mb-96 lg:p-16 p-1  bg-slate-100 border-slate-800 my-2  rounded-lg   ">
+          <div className="w-full">
             <h1 className=" lg:text-xl text-slate-400 my-4">
               New web3 technologies
             </h1>
