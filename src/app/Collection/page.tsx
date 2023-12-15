@@ -14,7 +14,7 @@ const Collection = () => {
           size={50}
           className="text-center border rounded-full p-2 animate-bounce"
         />
-        <h1 className="text-5xl"></h1>
+        <h1 className="text-2xl">Collections</h1>
       </div>
     </div>
   );
