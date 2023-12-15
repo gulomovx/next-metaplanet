@@ -6,20 +6,7 @@ import { exploreWorlds } from "../../constants/data";
 import ReactPlayer from "react-player";
 import bg from "../../../public/planet-07.png";
 import hero from "../../../public/stamp.png";
-import { Link } from "@chakra-ui/next-js";
-import {
-  Step,
-  StepDescription,
-  StepIcon,
-  StepIndicator,
-  StepNumber,
-  StepSeparator,
-  StepStatus,
-  StepTitle,
-  Stepper,
-  useSteps,
-} from "@chakra-ui/react";
-import Chakra from "@/components/Chakra";
+
 const About = () => {
   const [data, setData] = useState(exploreWorlds);
 
