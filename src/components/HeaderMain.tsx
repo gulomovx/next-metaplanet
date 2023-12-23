@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaCartShopping } from "react-icons/fa6";
 
 const HeaderMain = () => {
   const path = usePathname()
@@ -24,9 +25,10 @@ const HeaderMain = () => {
           </ul>
         </div>
         <div className="hidden md:block">
-          <div className="avatar online">
-            <div className="w-10 h-10 rounded-full">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          <div className="">
+            <div className="  flex justify-center cursor-pointer hover:scale-110 duration-300 items-center">
+              <FaCartShopping size={30} color='#0d3e67'/>
+              {/* <img src="https://www.pexels.com/photo/fashion-photography-of-woman-hands-on-chin-with-glitter-makeup-1081685" /> */}
             </div>
           </div>
         </div>

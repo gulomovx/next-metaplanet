@@ -9,6 +9,8 @@ import hero from "../../../public/stamp.png";
 import art from "../../../public/planet-07.png";
 import art2 from "../../../public/planet-08.png";
 import art3 from "../../../public/planet-09.png";
+import Link  from "next/link";
+import { GoArrowUp } from "react-icons/go";
 const About = () => {
   const [data, setData] = useState(exploreWorlds);
 
@@ -22,9 +24,9 @@ const About = () => {
            p-2 animate-bounce"
         />
         {/* content */}
-        <div className=" lg:w-[1400px] w-full mb-8 lg:p-16 p-1  bg-slate-100 border-slate-800 my-2  rounded-lg   ">
+        <div className=" lg:w-[1400px] w-full mb-8 lg:p-16 p-1  bg-gradient-to-br from-blue-400 to bg-orange-300 border-slate-800 my-2  rounded-lg   ">
           <div className="lg:w-[80%] mx-auto py-4">
-            <h1 className=" lg:text-xl text-slate-400 my-4">
+            <h1 className=" lg:text-xl text-slate-600 my-4">
               New web3 technologies
             </h1>
             <h1 className=" text-2xl lg:text-5xl  text-center mx-auto">
@@ -43,7 +45,7 @@ const About = () => {
         {/* content end */}
         {/* card grid */}
         <h1 className="lg:text-5xl text-3xl mt-8">Latest Arts</h1>
-        <div className="flex mb-96 max-w-8xl mt-8  flex-col md:flex-row lg:flex-row gap-4  ">
+        <div className="flex mb-24 max-w-8xl mt-8  flex-col md:flex-row lg:flex-row gap-4  ">
           <div className="h-full mx-auto">
             {/* one img */}
             <Image
@@ -62,11 +64,11 @@ const About = () => {
               />{" "}
             </div>
             <div className="h-full">
-            <Image
-              src={art3}
-              alt='art'
-              className="w-[400px] h-full  object-cover rounded-2xl"
-            />
+              <Image
+                src={art3}
+                alt="art"
+                className="w-[400px] h-full  object-cover rounded-2xl"
+              />
             </div>
           </div>
         </div>
@@ -75,6 +77,12 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl text-"></h1>
       </div>
+      <Link href="/About">
+        <GoArrowUp
+          color="black"
+          className="bg-slate-200 block   w-12 h-12 p-2 ml-auto my-2 animate-bounce text-slate-800 rounded-full"
+        />
+      </Link>
     </div>
   );
 };
