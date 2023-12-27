@@ -10,7 +10,7 @@ const HeaderMain = () => {
   
   
   return (
-    <div className="border-b    border-slate-800 shadow-sm py-2 sticky top-0 z-20 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100">
+    <div className="    border-slate-800 shadow-md py-2 sticky top-0 z-20 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100">
       <div className="container  sm:flex justify-between items-center ">
         <div className="font-semibold   text-2xl md:text-3xl lg:text-4xl text-center pb-4 sm:pb-0 text-[#0b4b66]">
           <Link href="/">MetaPlanet </Link>

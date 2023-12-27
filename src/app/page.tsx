@@ -116,3 +116,46 @@ export default function Home() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+// function isMiddleXYZ(str) {
+//   const len = str.length;
+//    if (len < 3) return false;
+
+//    const middleIndex = Math.floor(len / 2);
+
+//    return len % 2 === 0
+//        ? str.slice(middleIndex - 1, middleIndex + 2) === "xyz" || str.slice(middleIndex - 2, middleIndex + 1) === "xyz"
+//        : str.slice(middleIndex - 1, middleIndex + 2) === "xyz";
+// }
+
+
+
+
+
+
+// 2
+// function xyzMiddle(str) {
+//   const len = str.length;
+
+//   for (let i = 0; i < len - 2; i++) {
+//       const middleSubstring = str.slice(i, i + 3);
+//       const leftLength = i;
+//       const rightLength = len - i - 3;
+
+//       if (middleSubstring === 'xyz' && Math.abs(leftLength - rightLength) <= 1) {
+//           return true;
+//       }
+//   }
+
+//   return false;
+// }

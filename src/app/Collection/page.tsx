@@ -5,11 +5,13 @@ import { exploreWorlds } from "../../constants/data";
 import { GoArrowDown } from "react-icons/go";
 import bg1 from "../../asset/collect.jpg";
 import bg2 from "../../../public/planet-05.png";
-
-import { url } from "inspector";
+import data from '../../constants/data'
+// import { url } from "inspector";
 import Image from "next/image";
 const Collection = () => {
   const [selectedId, setSelectedId] = useState(null);
+  const [img, setImg] = useState(data)
+console.log(img);
 
   return (
     <div className="  mx-auto   ">
@@ -60,6 +62,20 @@ const Collection = () => {
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fuga, facere pariatur doloribus odio tempora aliquid voluptatibus dolore provident veniam!</p>
           </div>
         </div>
+        
+      </div>
+      {/* img grid */}
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-center lg:text-6xl text-3xl text-title mb-8">Art collecti<span className="inline-block lg:w-[100px] w-[40px]  lg:border-[7px] my-auto h-[20px] lg:h-[38px] border-[4px] lg:px-6 px-4  mx-[2px] border-[#124660]  lg:rounded-[32px] rounded-[30px]"></span>ns</h1>
+        {/* grid */}
+        
+        {data && data.map((item) => {
+        console.log(data);
+
+          return (
+            <Image key={item} alt="img" src={item.image}/>
+          )
+        })}
       </div>
     </div>
   );
