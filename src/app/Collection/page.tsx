@@ -15,7 +15,7 @@ const Collection = () => {
       <div className="flex flex-col items-center  text-center    ">
         <h1 className=" text-3xl flex lg:text-5xl my-2 mt-2 text-title animate-fade-down">
           C
-          <span className="inline-block lg:w-[120px] w-[6 0px]  lg:border-[7px] my-auto h-[25px] lg:h-[40px] border-[4px] lg:px-6 px-4  mx-[2px] border-[#124660]  lg:rounded-[32px] rounded-[30px]"></span>
+          <span className="inline-block lg:w-[120px] w-[60px]  lg:border-[7px] my-auto h-[25px] lg:h-[40px] border-[4px] lg:px-6 px-4  mx-[2px] border-[#124660]  lg:rounded-[32px] rounded-[30px]"></span>
           llection{" "}
         </h1>
         <GoArrowDown
