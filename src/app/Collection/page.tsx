@@ -9,7 +9,6 @@ import bg2 from "../../../public/planet-05.png";
 import Image from "next/image";
 const Collection = () => {
   const [selectedId, setSelectedId] = useState(null);
-console.log(img);
 
   return (
     <div className="  mx-auto   ">
