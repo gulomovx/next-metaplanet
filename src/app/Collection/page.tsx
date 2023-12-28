@@ -69,13 +69,7 @@ console.log(img);
         <h1 className="text-center animate-fade-up  lg:text-6xl text-3xl text-title mb-8">Art collecti<span className="inline-block lg:w-[100px] w-[40px]  lg:border-[7px] my-auto h-[20px] lg:h-[38px] border-[4px] lg:px-6 px-4  mx-[2px] border-[#124660]  lg:rounded-[32px] rounded-[30px]"></span>ns</h1>
         {/* grid */}
         
-        {data && data.map((item) => {
-        console.log(data);
-
-          return (
-            <Image key={item} alt="img" src={item.image}/>
-          )
-        })}
+        
       </div>
     </div>
   );
