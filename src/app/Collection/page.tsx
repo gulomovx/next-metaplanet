@@ -5,12 +5,10 @@ import { exploreWorlds } from "../../constants/data";
 import { GoArrowDown } from "react-icons/go";
 import bg1 from "../../asset/collect.jpg";
 import bg2 from "../../../public/planet-05.png";
-import data from '../../constants/data'
 // import { url } from "inspector";
 import Image from "next/image";
 const Collection = () => {
   const [selectedId, setSelectedId] = useState(null);
-  const [img, setImg] = useState(data)
 console.log(img);
 
   return (
