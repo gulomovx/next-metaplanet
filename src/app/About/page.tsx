@@ -17,14 +17,14 @@ const About = () => {
   return (
     <div className="h-full  ">
       <div className="flex  flex-col  items-center  text-center bg-no-repeat bg-cover">
-        <h1 className=" text-4xl lg:text-7xl my-4 text-title ">About </h1>
+        <h1 className=" text-4xl lg:text-7xl my-4 text-title animate-fade-down duration-500">About </h1>
         <GoArrowDown
           // size={50}
           className="text-center lg:text-[60px] text-[40px] border rounded-full 
            p-2 animate-bounce"
         />
         {/* content */}
-        <div className=" lg:w-[1400px] w-full mb-8 lg:p-16 p-1  bg-gradient-to-br from-blue-400 to bg-orange-300 border-slate-800 my-2  rounded-lg   ">
+        <div className=" lg:w-[1400px] animate-fade-up delay-[300ms] w-full mb-8 lg:p-16 p-1  bg-gradient-to-br from-blue-400 to bg-orange-300 border-slate-800 my-2  rounded-lg   ">
           <div className="lg:w-[80%] mx-auto py-4">
             <h1 className=" lg:text-xl text-slate-600 my-4">
               New web3 technologies
